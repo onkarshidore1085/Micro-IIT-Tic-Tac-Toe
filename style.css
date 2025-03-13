@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    color: red;
+    font-family:cursive;
+    background: linear-gradient(150deg,  rgb(0, 145, 255) 20%, rgb(255, 2, 137) 40%, rgb(107, 2, 107)60%,rgb(0, 255, 0) 100%);
+    background-clip: text;
+    color: transparent;  
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: rgb(146, 146, 146);
+    border: 1px solid green;
+    cursor: pointer;
+}
+.cell:hover{
+    border: 1px solid green;
+    background-color: #c9c9c9;
+    box-shadow: 0px 0px 3px black;
+    transform: scale(1.01);
+    transition: 1s;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#restart {
+    height: 40px;
+    width: 250px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: green;
+    border: none;
+}
+#restart:hover{
+    /* background-color: rgb(241, 3, 50); */
+    background: linear-gradient(140deg, red, purple 60%, blue);
+    box-shadow: 1px 1px 10px black;
+}
